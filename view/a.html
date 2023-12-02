@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Show/Hide Information with Radio Buttons</title>
+  <style>
+    .info-content {
+      display: none;
+    }
+
+    input[type="radio"]:checked + .info-content {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+  <label>
+    <input type="radio" name="info" id="info1"> Option 1
+    <div class="info-content">
+      <!-- Thông tin cho Option 1 -->
+      <p>This is information for Option 1.</p>
+    </div>
+  </label>
+
+  <label>
+    <input type="radio" name="info" id="info2"> Option 2
+    <div class="info-content">
+      <!-- Thông tin cho Option 2 -->
+      <p>This is information for Option 2.</p>
+    </div>
+  </label>
+
+</body>
+</html>
